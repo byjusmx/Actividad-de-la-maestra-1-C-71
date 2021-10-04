@@ -18,9 +18,9 @@ export default class BottomTabNavigator extends Component {
             tabBarIcon: ({ focused, color, size }) => {
               let iconName;
 
-              if (route.name === "Transaction") {
+              if (route.name === "Transacción") {
                 iconName = "book";
-              } else if (route.name === "Search") {
+              } else if (route.name === "Buscar") {
                 iconName = "search";
               }
 
@@ -60,8 +60,8 @@ export default class BottomTabNavigator extends Component {
             }
           }}
         >
-          <Tab.Screen name="Transaction" component={TransactionScreen} />
-          <Tab.Screen name="Search" component={SearchScreen} />
+          <Tab.Screen name="Transacción" component={TransactionScreen} />
+          <Tab.Screen name="Buscar" component={SearchScreen} />
         </Tab.Navigator>
       </NavigationContainer>
     );
